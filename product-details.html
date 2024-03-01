@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+   
+  
+<head>
+   
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T-Shirt - RedStore | Ecommerce Website Design</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="btncolor.css">
+    <link rel="stylesheet" href="Knappen.css">
+    <link rel="stylesheet" href="Save.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="Java.js">
+    <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'></script>
+    <script src="jquery.zoom.js"></script>
+    
+   
+    
+    
+
+
+</head>
+<body>
+       <div class="container">
+          <div class="navbar1">
+              <div class="logo">
+                  <a href="index.html"><img src="images/logo.png" width="125px"></a>
+              </div>
+              <nav>
+               <ul id="MenuItems">
+                   <li><a href="index.html">Home</a></li>
+                   <li><a href="products.html">Products</a></li>
+                   <li><a href="">About</a></li>
+                   <li><a href="">Contact</a></li>
+                   <li><a href="account.html">Account</a></li>
+               </ul>
+              </nav>
+              <a href="cart.html"><img src="images/cart.png" width="30px" height="30px"></a>
+              <img src="images/menu.png" onclick="menutoggle()" class="menu-icon">
+          </div>
+          
+       </div>
+       
+       
+<!--------------single-product--------------->
+
+
+
+
+
+<div class="small-container single-product">
+    
+    <div class="row">
+        <div class="col-2" >
+            <div class="Big-img-col" id="ProductImg2">
+                <img src="images/gallery-1.jpg" width="100%" id="ProductImg" class="zoom-img" >
+            </div>
+            
+            <div class="small-img-row">
+               <div class="small-img-col">
+                   <img src="images/gallery-1.jpg" class="small-img" width="100%">
+               </div>
+               <div class="small-img-col">
+                   <img src="images/gallery-2.jpg" class="small-img" width="100%">
+               </div>
+               <div class="small-img-col">
+                   <img src="images/gallery-3.jpg" class="small-img" width="100%">
+               </div>
+               <div class="small-img-col">
+                   <img src="images/gallery-4.jpg" class="small-img" width="100%">
+               </div>
+            </div>
+            
+
+            <script>
+                $(document).ready(function(){
+                    // Aktivera zoom på både den stora bilden och de små bilderna
+                    $('#ProductImg2, .small-img').zoom();
+                    
+                    // Hämta referenser till stor bildscontainer och små bilder
+                    var bigImageCol = document.getElementById('ProductImg2');
+                    var smallImages = document.querySelectorAll('.small-img');
+                
+                    // Lägg till en klickhändelselyssnare på varje liten bild
+                    smallImages.forEach(function (smallImage) {
+                        smallImage.addEventListener('click', function () {
+                            // Hämta källan för den lilla bilden som klickades på
+                            var imageSrc = this.getAttribute('src');
+                
+                            // Uppdatera källan för den stora bilden
+                            var bigImage = document.getElementById('ProductImg');
+                            bigImage.src = imageSrc;
+                            
+                            // Anropa Zoom-pluginet igen på den stora bilden
+                            $('#ProductImg2').trigger('zoom.destroy');
+                            $('#ProductImg2').zoom();
+                        });
+                    });
+                });
+                </script>
+
+          
+            
+                
+            
+        </div>
+        <div class="col-2">
+            <a>Home / Products</a>
+            <h1>FITTED SATIN ASYMMETRICAL GOWN</h1>
+            <h4>2499KR</h4>
+            <div class="form-group">
+            <select id="sizeSelect">
+                <option>Select Size</option>
+                <option>XXL</option>
+                <option>XL</option>
+                <option>Large</option>
+                <option>Midium</option>
+                <option>Small</option>
+            </select>
+            
+        </div>
+        <div class="button-container">
+            <a class="Black" href="black.html" >
+                <span class="top-key"></span>
+                <span class="text">Black</span>
+                <span class="bottom-key-1"></span>
+                <span class="bottom-key-2"></span>
+            </a>
+    
+            <a class="Blue" href="product-details.html">
+                <span class="top-key"></span>
+                <span class="text">Blue</span>
+                <span class="bottom-key-1"></span>
+                <span class="bottom-key-2"></span>
+            </a>
+            
+        </div>
+            
+        <a id="informationBtn" href="https://www.instagram.com/direct/t/17844606371720292" target="_blank">
+            <button><span></span>button</button>
+            
+        </a>
+        
+        
+
+            
+        
+            <script>
+                // Lägg till en eventlyssnare på knappen
+                document.getElementById('instagramChatBtn').addEventListener('click', function() {
+                    // Hämta den valda storleken från select-elementet
+                    var selectedSize = document.getElementById('sizeSelect').value;
+                    
+                    // Skapa länken till Instagram-chatten med den valda storleken
+                    var instagramLink = 'https://www.instagram.com/direct/t/17844606371720292/?text=' + encodeURIComponent(selectedSize);
+                    
+                    // Öppna Instagram-chatten i en ny flik eller fönster
+                    window.open(instagramLink);
+                });
+            </script>
+            
+            <h3>PRODUCT DETAILS <i class="fa fa-indent"></i></h3>
+            <br>
+            <p>This sumptuous satin gown is sure to make a grand entrance. With a strapless pleated neckline this gown drapes around the bodice and into a pleated skirt. Scores of light reflect off the stones peaking through the sheer corseted bodice. A satin train flows from the waistline giving you all the drama!
+                <br>
+                <br>
+                <br><br><br><br><br><br>
+            </p>
+        </div>
+    </div>
+</div>
+
+
+     
+   
+<!----------Footer---------------> 
+
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col1">
+               <h3>Download Our App</h3>
+                <p>Download App for Android and ios mobile phone.</p>
+                <div class="app-logo">
+                    <img src="images/play-store.png">
+                    <img src="images/app-store.png">
+                </div>
+            </div>
+            <div class="footer-col2">
+               <img src="images/logo-white.png">
+                <p>Our Purpose Is To Sustainably Make the Pleasure and Benefits of Sports Accessible to the Many.</p>
+            </div>
+            <div class="footer-col3">
+               <h3>Useful Links</h3>
+                <ul>
+                    <li>Coupons</li>
+                    <li>Blog Post</li>
+                    <li>Return Policy</li>
+                    <li>Join Affiliate</li>
+                </ul>
+            </div>
+            <div class="footer-col4">
+               <h3>Follow Us</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Twitter<li>
+                    <li>Instagram</li>
+                    <li>YouTube</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright"><a href="https://www.youtube.com/c/EasyTutorialsVideo?sub_confirmation=1">Copyright 2020 - Easy Tutorials</a></p>
+    </div>
+    
+</div>
+
+
+
+<!-------------js for toggle menu-------------->
+
+<script>
+    
+    var MenuItems = document.getElementById("MenuItems");
+    
+    MenuItems.style.maxHeight = "0px";
+    
+    function menutoggle()
+    {
+        if(MenuItems.style.maxHeight == "0px")
+            {
+                MenuItems.style.maxHeight = "200px";
+            }else
+            {
+                MenuItems.style.maxHeight = "0px"
+            } 
+    }
+    
+//-------------Produc Gallery------------
+    
+    var ProductImg = document.getElementById("ProductImg");
+    
+    var SmallImg = document.getElementsByClassName("small-img");
+       
+ 
+        SmallImg[0].onclick = function()
+        {
+            ProductImg.src = SmallImg[0].src;
+        }
+        SmallImg[1].onclick = function()
+        {
+            ProductImg.src = SmallImg[1].src;
+        
+        }
+        SmallImg[2].onclick = function()
+        {
+            ProductImg.src = SmallImg[2].src;
+        
+        }
+        SmallImg[3].onclick = function()
+        {
+            ProductImg.src = SmallImg[3].src;
+        
+        }
+
+  //-------------End Produc Gallery------------  
+    
+    

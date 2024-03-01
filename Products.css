@@ -1,0 +1,106 @@
+.product-card img {
+    max-width: 100%; /* Sätt maximal bredd till 100% av föräldreelementet */
+    height: auto; /* Autohöjd för att behålla proportionerna */
+}
+
+
+
+
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff; /* Justera bakgrundsfärgen efter behov */
+    z-index: 1000; /* Sätt ett högt z-index-värde för att navigationsfältet ska ligga över andra element */
+}
+.container {
+    padding-top: 80px; /* Justera detta värde baserat på höjden på ditt navigationsfält */
+}
+.container1 {
+    padding-top: 50px; /* Justera detta värde baserat på höjden på ditt navigationsfält */
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar1{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: black;
+    width: 100%;
+    margin-top: -80px;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+p{
+    color: rgb(255 255 255);
+    font-family: 'ZCOOL XiaoWei', serif;
+    font-size:28px;
+}
+h1{
+    color: white;
+    font-family: 'ZCOOL XiaoWei', serif;
+}
+
+
+
+
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: rgba(0,0,0, 0.4);
+    width: 100%;
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+    
+}
+nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+}
+.menu-icon{
+    display: none;
+    width: 28px;
+    margin-left: 20px;
+}
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.logo{
+    margin-left: 15px;
+}
+
+.small-container h2{
+    padding-top: 50px;
+    color: #000000;
+}
+
+
+
+    
+
+
+
+
+
+

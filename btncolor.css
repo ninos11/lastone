@@ -1,0 +1,251 @@
+/* Färg Knappen "Black" */
+
+.Black {
+    background-color: transparent;
+    border: 2px solid #000; /* Minskat tjockleken på ramen */
+    border-radius: 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    margin: 0;
+    outline: none;
+    padding: 0.5em 1em; /* Minskad padding för både höjd och bredd */
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    text-transform: none;
+    transition: all 0.3s ease-in-out;
+    user-select: none;
+    font-size: 12px; /* Minskad textstorlek */
+}
+
+
+
+   
+   .Black::before {
+    content: " ";
+    width: 1.5625rem;
+    height: 1px;
+    background: black;
+    top: 50%;
+    left: 1px;
+    position: absolute;
+    transform: translateY(-50%);
+    transform-origin: center;
+    transition: background 0.3s linear, width 0.3s linear;
+   }
+   
+   .Black .text {
+    font-size: 10px;
+    line-height: 1.33333em;
+    padding-left: 1px;
+    display: block;
+    text-align: left;
+    transition: all 0.3s ease-in-out;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+   }
+   
+   .Black .top-key {
+    height: 2px;
+    width: 1.5625rem;
+    top: -2px;
+    left: 0.625rem;
+    position: absolute;
+    background: #e8e8e8;
+    transition: width 0.5s ease-out, left 0.3s ease-out;
+   }
+   
+   .Black .bottom-key-1 {
+    height: 2px;
+    width: 1.5625rem;
+    right: 1.875rem;
+    bottom: -2px;
+    position: absolute;
+    background: #e8e8e8;
+    transition: width 0.5s ease-out, right 0.3s ease-out;
+   }
+   
+   .Black .bottom-key-2 {
+    height: 2px;
+    width: 0.625rem;
+    right: 0.625rem;
+    bottom: -2px;
+    position: absolute;
+    background: #e8e8e8;
+    transition: width 0.5s ease-out, right 0.3s ease-out;
+   }
+   
+   .Black:hover {
+    color: white;
+    background: black;
+   }
+   
+   .Black:hover::before {
+    width: 0.9375rem;
+    background: white;
+   }
+   
+   .Black:hover .text {
+    color: white;
+    padding-left: 1.5em;
+   }
+   
+   .Black:hover .top-key {
+    left: -2px;
+    width: 0px;
+   }
+   
+   .Black:hover .bottom-key-1,
+    .Black:hover .bottom-key-2 {
+    right: 0;
+    width: 0;
+   }
+   .form-group {
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.Black {
+    display: block;
+    margin-top: 10px;
+    margin-right: 10px;
+
+}
+
+
+
+.button-container {
+    display: flex;
+    gap: 10px; /* Justera avståndet mellan knapparna om det behövs */
+}
+
+
+/* Färg Knappen "Blue"*/
+
+.Blue {
+    background-color: transparent;
+    border: 2px solid #000; /* Minskat tjockleken på ramen */
+    border-radius: 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    margin: 0;
+    outline: none;
+    padding: 0.5em 1em; /* Minskad padding för både höjd och bredd */
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    text-transform: none;
+    transition: all 0.3s ease-in-out;
+    user-select: none;
+    font-size: 12px; /* Minskad textstorlek */
+}
+
+
+   
+   .Blue::before {
+    content: " ";
+    width: 1.5625rem;
+    height: 1px;
+    background: black;
+    top: 50%;
+    left: 1px;
+    position: absolute;
+    transform: translateY(-50%);
+    transform-origin: center;
+    transition: background 0.3s linear, width 0.3s linear;
+   }
+   
+   .Blue .text {
+    font-size: 10px;
+    line-height: 1.33333em;
+    padding-left: 1px;
+    display: block;
+    text-align: left;
+    transition: all 0.3s ease-in-out;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+   }
+   
+   .Blue .top-key {
+    height: 2px;
+    width: 1.5625rem;
+    top: -2px;
+    left: 0.625rem;
+    position: absolute;
+    background: #e8e8e8;
+    transition: width 0.5s ease-out, left 0.3s ease-out;
+   }
+   
+   .Blue .bottom-key-1 {
+    height: 2px;
+    width: 1.5625rem;
+    right: 1.875rem;
+    bottom: -2px;
+    position: absolute;
+    background: #e8e8e8;
+    transition: width 0.5s ease-out, right 0.3s ease-out;
+   }
+   
+   .Blue .bottom-key-2 {
+    height: 2px;
+    width: 0.625rem;
+    right: 0.625rem;
+    bottom: -2px;
+    position: absolute;
+    background: #e8e8e8;
+    transition: width 0.5s ease-out, right 0.3s ease-out;
+   }
+   
+   .Blue:hover {
+    color: white;
+    background: #00ccff;
+   }
+   
+   .Blue:hover::before {
+    width: 0.9375rem;
+    background: white;
+   }
+   
+   .Blue:hover .text {
+    color: white;
+    padding-left: 1.5em;
+   }
+   
+   .Blue:hover .top-key {
+    left: -2px;
+    width: 0px;
+   }
+   
+   .Blue:hover .bottom-key-1,
+    .Blue:hover .bottom-key-2 {
+    right: 0;
+    width: 0;
+   }
+   .form-group {
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.Blue {
+    display: block;
+    margin-top: 10px;
+    margin-right: 10px;
+
+}
+
+.button-container {
+    display: flex;
+    gap: 10px; /* Justera avståndet mellan knapparna om det behövs */
+}
